@@ -13,7 +13,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  number_line = []
+  number_line = [katz_deli]
   if katz_deli.length == 0
     number_line << name
   elsif katz_deli.length >= 1
