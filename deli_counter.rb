@@ -16,7 +16,7 @@ def take_a_number(katz_deli, name)
   number_line = []
   if katz_deli.length == 0
     number_line << name
-  if katz_deli.length <= 1
+  elsif katz_deli.length <= 1
     katz_deli.each do |name|
       number_line << name
   number_line.each_with_index do |name, index|
