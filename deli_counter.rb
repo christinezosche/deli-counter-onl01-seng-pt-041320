@@ -6,8 +6,8 @@ def line(katz_deli)
   elsif katz_deli.length >= 1
     new_line = []
     katz_deli.each_with_index do |name, idx|
-     new_line << "#{idx+1}. #{name} "
+     new_line << "#{idx+1}. #{name}"
     end
-    puts "The line is currently: " + new_line.join
+    puts "The line is currently: " + new_line.join(" ")
   end
 end
