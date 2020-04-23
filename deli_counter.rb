@@ -15,10 +15,10 @@ end
 def take_a_number(katz_deli, name)
   other_deli = [katz_deli]
   if katz_deli.length == 0
-    katz_deli << name
+    other_deli << name
   elsif katz_deli.length >= 1
-    katz_deli.push name
-  katz_deli.each_with_index do |customer, index|
+    other_deli.push name
+  other_deli.each_with_index do |customer, index|
     puts "Welcome, #{customer}. You are number #{index+1} in line."
   end
 end
